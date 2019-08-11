@@ -1,0 +1,38 @@
+A = [A, [100; 101; 102]]  % append a column to the current matrix
+A(:) % put all elements of A into a single vector
+
+octave:58> A = [1 2; 3 4 ; 5 6];
+octave:59> B =[11 12; 13 14 ; 15 16];
+
+octave:62> A
+A =
+
+   1   2
+   3   4
+   5   6
+
+B =
+
+   11   12
+   13   14
+   15   16
+
+
+octave:60> C = [A B]
+C =
+
+    1    2   11   12
+    3    4   13   14
+    5    6   15   16
+
+octave:61> C = [A; B]
+C =
+
+    1    2
+    3    4
+    5    6
+   11   12
+   13   14
+   15   16
+
+
